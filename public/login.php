@@ -22,6 +22,7 @@
                     <legend>Senha</legend>
                     <input type="password" name="pass" id="idpass">
                 </fieldset>
+                <a href="registrar.php">Caso nao tenha conta registra-se</a>
                 <input type="submit" value="Logar" class="btn">
             </form>
         </div>
