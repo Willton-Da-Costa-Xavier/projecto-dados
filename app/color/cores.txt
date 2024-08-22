@@ -1,0 +1,23 @@
+azul
+{
+cor 1 ->#51D2FC,
+cor 2 ->#628B99,
+cor 3 -> #4AC4ED,
+cor 4 -> #59686E,
+cor 5 -> #363F42,
+cor 6 -> #212F33
+}
+
+cor 2 -> preto azulado -> #001C31
+cor 4 -> preto -> #050505
+
+cinzento
+{
+cor 1 ->5C5B57,
+cor 2 ->#999896,
+cor 3 -> #EDEADF,
+cor 4 -> #6E6E6E,
+cor 5 -> #424242,
+cor 6 -> #212F33
+}
+
