@@ -139,13 +139,6 @@ input.btn{
     width: 100px;
 }
 
-/* @media screen and (max-width: 600px){
-    body{
-        font-size: 1em;
-    }
-
-   
-} */
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
     body{
@@ -229,6 +222,8 @@ input.btn{
         font-size: 1.3em;
         font-weight: normal;
     }
+
+    
 
    
     
