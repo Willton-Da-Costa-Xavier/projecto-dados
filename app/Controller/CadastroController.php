@@ -11,6 +11,7 @@
            $u->setNome($_POST["nome"]);
            $nome = $u->getNome();
         }else{
+            //caso tenha um erro ele retorna o erro atraves da url
             header("Location: ../layout/formulario_cadastro.php?erronome=true");
         }
 
@@ -18,6 +19,7 @@
             $u->setMail($_POST["mail"]);
             $mail = $u->getMail();        
         }else{
+            //caso tenha um erro ele retorna o erro atraves da url
             header("Location: ../layout/formulario_cadastro.php?erromail=true");
         }
 
@@ -26,6 +28,7 @@
             $pass = $u->getSenha();
             $hasdpassword = password_hash($pass,PASSWORD_BCRYPT);        
         }else{
+            //caso tenha um erro ele retorna o erro atraves da url
             header("Location: ../layout/formulario_cadastro.php?errosenha=true");
         }
 
@@ -36,6 +39,7 @@
         if($stmnt->execute()){
            header("Location: ../layout/formulario_cadastro.php?sucess=true"); 
         }else{
+            //caso tenha um erro ele retorna o erro atraves da url
             header("Location: ../layout/formulario_cadastro.php?erro=true");
         }
     }
