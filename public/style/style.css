@@ -7,15 +7,15 @@
 }
 
 @font-face {
-    font-family:"Andaray" ;
-    src: url("../../app/fonts/Andaray.otf") format("opentype");
+    font-family:"Choco" ;
+    src: url("../../app/fonts/Choco\ Shake.ttf") format("trutype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family:"Michland" ;
-    src: url("../../app/fonts/Michland\ Script.otf") format("opentype");
+    font-family:"Typewritter" ;
+    src: url("../../app/fonts/JMH\ Typewriter\ dry-Thin.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -28,8 +28,8 @@
 }
 
 :root{
-    --font1: "Andaray";
-    --font2: "Michland";
+    --font1: "Choco";
+    --font2: "Typewritter";
     --font3: "Matt";
     --corAzul1: #51D2FC;
     --corAzul: #628B99;
@@ -50,7 +50,7 @@
 
 body{
     background:linear-gradient(45deg, var(--corPreto1), var(--corPreto2));
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:var(--font2);
     font-size: 1.2em;
     font-weight: bold;
     background-repeat: no-repeat;
@@ -124,6 +124,7 @@ a{
     color: white;
     margin-top: 0px;
     font-weight: normal;
+    font-family: var(--font1);
 }
 
 a:hover{
@@ -131,7 +132,7 @@ a:hover{
 }
 
 input.btn{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--font1);
     font-weight: bold;
     cursor: pointer;
     border: 2px solid var(--corPreto3);
