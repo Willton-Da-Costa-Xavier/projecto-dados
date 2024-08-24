@@ -3,11 +3,11 @@
     class Usuario{
         private $nome;
         private $senha;
+        private $mail;
 	
-	    public function __construct($n, $s)
+	    public function __construct()
 	    {
-		    $this->nome = $n;
-		    $this->senha = $s;
+		    
 	    }
 
 
@@ -37,12 +37,25 @@
             $this->senha = $senha;
         }
 
-        public function Cadastro(){
+        public function Cadastro($mail,$senha,$username){
             
+
         }
 
         public function login(){
 
+        }
+
+
+        public function getMail()
+        {
+            return $this->mail;
+        }
+
+       
+        public function setMail($mail)
+        {
+            $this->mail = $mail;
         }
     }
 

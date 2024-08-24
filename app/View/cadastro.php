@@ -8,38 +8,7 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div class="container" id="cadcontainer">
-       
-       <img src="../img/cadiadoChave.png" alt="cadiado e chave" class="chave" id="imgcad">
-
-       <div class="formulario" >
-           <form action="../../public/login.php" method="post" autocomplete="off">
-               <fieldset>
-                   <legend>Usuario</legend>
-                   <input type="text" name="nome" id="idnome">
-               </fieldset>
-
-               <fieldset>
-                <legend>E-Mail</legend>
-                <input type="email" name="mail" id="idmail">
-               </fieldset>
-
-               <fieldset>
-                   <legend>Senha</legend>
-                   <input type="password" name="pass" id="idpass">
-               </fieldset>
-
-               <input type="submit" value="Cadastrar" class="btn" id="open">
-           </form>
-       </div>
-
-        <dialog id="pop-up">
-            <h1>Registro Feito com sucesso</h1>
-            <img src="" alt="">
-            <button id="close">OK</button>
-        </dialog>
-    </div>
-
-    <script src="../../public/js/script.js"></script>
+    <!-- Utilizamos a funcao include("caminho do arquivo") para incluir dados ou funcoes, etc...-->
+    <?php include("../layout/formulario_cadastro.php");?>
 </body>
 </html>
