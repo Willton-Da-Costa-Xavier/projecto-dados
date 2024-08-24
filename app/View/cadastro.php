@@ -8,20 +8,27 @@
     <title>Cadastro</title>
 </head>
 <body>
-<div class="container">
+    <div class="container" id="cadcontainer">
        
-       <img src="../img/cadiadoChave.png" alt="cadiado e chave" class="chave">
+       <img src="../img/cadiadoChave.png" alt="cadiado e chave" class="chave" id="imgcad">
 
-       <div class="formulario">
+       <div class="formulario" >
            <form action="../../public/login.php" method="post" autocomplete="off">
                <fieldset>
-                   <legend>Nome</legend>
+                   <legend>Usuario</legend>
                    <input type="text" name="nome" id="idnome">
                </fieldset>
+
+               <fieldset>
+                <legend>E-Mail</legend>
+                <input type="email" name="mail" id="idmail">
+               </fieldset>
+
                <fieldset>
                    <legend>Senha</legend>
                    <input type="password" name="pass" id="idpass">
                </fieldset>
+
                <input type="submit" value="Cadastrar" class="btn" id="open">
            </form>
        </div>

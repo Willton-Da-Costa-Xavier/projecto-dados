@@ -81,6 +81,10 @@ div.formulario{
     padding-top: 10px;
 }
 
+#cadcontainer{
+    height: 600px;
+}
+
 form{
    display: flex;
    flex-direction: column;
@@ -150,13 +154,16 @@ input.btn{
     }
 
     div.container{
-        width: 500px;
-        height: 570px;
+        width: 550px;
+        height: 590px;
+    }
+
+    #cadcontainer{
+        height: 660px;
     }
 
     div.formulario{
-        margin: 3%;
-        
+        margin: 5%;  
     }
 
     form{
@@ -195,8 +202,12 @@ input.btn{
     }
 
     div.formulario{
-        margin: 7%;
+        margin: 5%;
         
+    }
+
+    #cadcontainer{
+        height: 660px;
     }
 
     form{
@@ -247,6 +258,10 @@ input.btn{
         
     }
 
+    #cadcontainer{
+        height: 700px;
+    }
+
     form{
         gap: 40px;
     }
@@ -277,8 +292,12 @@ input.btn{
     }
 
     div.container{
-        width: 800px;
+        width: 700px;
         height: 650px;
+    }
+
+    #cadcontainer{
+        height: 670px;
     }
 
     div.formulario{
@@ -287,18 +306,18 @@ input.btn{
     }
 
     form{
-        gap: 30px;
+        gap: 25px;
     }
 
     fieldset{
-        width: 700px;
+        width: 600px;
         padding: 15px;
         border: 3px solid;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     input{
-        width: 650px;
+        width: 550px;
         height: 60px;
     }
 
@@ -310,7 +329,7 @@ input.btn{
 
     a{
 
-        font-size: 1em;
+        font-size: 1.2em;
         text-decoration: none;
         color: white;
         margin-top: 0px;
@@ -321,7 +340,12 @@ input.btn{
     }
 
     .chave{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
+
+    /* #imgcad{
+        width: 100px;
+        height: 100px;
+    } */
 }

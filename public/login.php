@@ -15,7 +15,7 @@
         <div class="formulario">
             <form action="" method="post" autocomplete="off">
                 <fieldset>
-                    <legend>Nome</legend>
+                    <legend>Username</legend>
                     <input type="text" name="nome" id="idnome">
                 </fieldset>
                 <fieldset>
