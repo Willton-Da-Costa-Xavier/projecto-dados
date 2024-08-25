@@ -10,5 +10,7 @@
 <body>
     <!-- Utilizamos a funcao include("caminho do arquivo") para incluir dados ou funcoes, etc...-->
     <?php include("../app/layout/formulario_login.php");?>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
