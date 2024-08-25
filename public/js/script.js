@@ -12,9 +12,9 @@ let nome = urlParams.get('nome') || "";
 let email = urlParams.get('email') || "";
 let pass = urlParams.get("senha") || "";
 
-inputmail.value = email;
-inputsenha.value = pass;
-inputusuario.value = nome;
+// inputmail.value = email;
+// inputsenha.value = pass;
+// inputusuario.value = nome;
 
 if(urlParams.has("sucess")){
     modal.showModal();

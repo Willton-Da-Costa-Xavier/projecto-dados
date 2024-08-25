@@ -13,12 +13,12 @@
         <img src="../app/img/cadiadoChave.png" alt="cadiado e chave" class="chave">
 
         <div class="formulario">
-            <form action="" method="post" autocomplete="off">
-                <fieldset>
+            <form action="../Controller/LoginController.php" method="post" autocomplete="off">
+                <fieldset  id="usuario">
                     <legend>Username</legend>
                     <input type="text" name="nome" id="idnome">
                 </fieldset>
-                <fieldset>
+                <fieldset id="senha">
                     <legend>Senha</legend>
                     <input type="password" name="pass" id="idpass">
                 </fieldset>
@@ -36,6 +36,5 @@
 
         <button id="close">OK</button>
     </dialog>
-    
 </body>
 </html>
