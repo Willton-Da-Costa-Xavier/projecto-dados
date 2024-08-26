@@ -8,6 +8,9 @@ let inputmail = window.document.querySelector("input#idmail");
 let inputsenha = window.document.querySelector("input#idpass");
 const urlParams = new URLSearchParams(window.location.search);
 let caixa = window.document.querySelector("div#cadcontainer");
+
+let anexos = window.document.querySelector("#anexos");
+let lista = window.document.querySelector("#lista");
 let nome = urlParams.get('nome') || "";
 let email = urlParams.get('email') || "";
 let pass = urlParams.get("senha") || "";
@@ -15,6 +18,11 @@ let pass = urlParams.get("senha") || "";
 // inputmail.value = email;
 // inputsenha.value = pass;
 // inputusuario.value = nome;
+
+function animar(){
+    const form = window.document.querySelector("#form");
+    form.classList.toggle("ativar");
+}
 
 if(urlParams.has("sucess")){
     modal.showModal();

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+nav{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background-color: black;
+   width: 100vw;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+
+li{
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    margin-bottom: 10rem;
+}
+
+svg:hover{
+    fill:crimson;
+}
+
+svg#form:hover{
+    stroke: crimson;
+}

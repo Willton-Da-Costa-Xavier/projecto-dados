@@ -13,7 +13,7 @@
             $nome = $usuario->getNome();
         }else{
             //caso tenha um erro ele retorna o erro atraves da url
-            header("Location: ../view/cadastro.php?erronome=true");
+            header("Location: ../../public/login.php?erronome=true");
             exit();
         }
 
@@ -22,7 +22,7 @@
             $pass = $usuario->getSenha();  
         }else{
             //caso tenha um erro ele retorna o erro atraves da url
-            header("Location: ../view/cadastro.php?errosenha=true&nome=".$_POST["nome"]."&email=".$_POST["mail"]);
+            header("Location: ../../public/login.php?errosenha=true&nome=".$_POST["nome"]);
             exit();
         }
 
@@ -43,7 +43,7 @@
 
             //verificamos a senha digitada e comparamos com a senha buscada
             if(password_verify($pass,$hashArmazenado)){
-                header("Location: ../View/menu.php?user=".$nome);
+                header("Location: ../view/menu.php?user=".$nome);
                 exit();
             }else{
                 header("Location: ../../public/login.php?errosenha=true"); 
