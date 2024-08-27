@@ -1,3 +1,15 @@
+<?php 
+//Verificamos o nome do usuario levado da URL
+if(isset($_GET["user"])){
+    $nome = $_GET["user"];
+    echo "<div class='texto'>
+        Bem Vindo ". $nome . "
+    </div>";
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -52,7 +64,7 @@
                 //trocamos o conteudo da variavel $page
                 switch ($page) {
                     case 'formulario':
-                        include("formulario.php");
+                        include("../layout/formulario_dados.php");
                         break;
                         
                     case "anexos":
@@ -64,14 +76,11 @@
                         break;
 
                     default:
-                        if(isset($_GET["user"])){
-                            $nome = $_GET["user"];
-                            echo "<h1>Bem Vindo </h1>". $nome;
-                        }
+                       
+                        // echo "<h1>Bem Vindo </h1>". $nome;
+                        
                         
                 }
-            }else{
-                echo "<h1>Bem Vindo </h1>";
             }
             
         ?>
